@@ -14,13 +14,14 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!") //test
-        }
-        .padding()
+        }.padding(39)
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .border(.black, width:3)
     }
 }
