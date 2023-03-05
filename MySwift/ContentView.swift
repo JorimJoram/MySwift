@@ -8,12 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    let apples = 4
+    let oranges = 9
+    
+    
     var body: some View {
         VStack {
+            let question = """
+                I said "I have \(apples) apples"
+                    And then I said "I have \(apples + oranges) pieces
+                    of fruit"
+            """
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!") //test
+            Text(question) //test
         }.padding(39)
     }
 }
